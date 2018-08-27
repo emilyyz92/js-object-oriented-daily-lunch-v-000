@@ -6,5 +6,6 @@ class Neighborhood {
   constructor(name) {
     this.name = name
     this.id = neighborId++
+    store.neighborhoods.push(this)
   }
 }

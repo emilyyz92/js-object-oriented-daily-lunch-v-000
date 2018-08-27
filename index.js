@@ -42,10 +42,10 @@ class Customer {
 
 class Meal {
   constructor(title, price) {
-    this.title = title;
-    this.price = parseInt(price);
-    this.id = mealId++;
-    store.meals.push(this);
+    this.title = title
+    this.price = parseInt(price)
+    this.id = mealId++
+    store.meals.push(this)
   }
 }
 

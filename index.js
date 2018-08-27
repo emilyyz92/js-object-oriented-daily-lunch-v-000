@@ -13,8 +13,9 @@ class Neighborhood {
   }
 
   deliveries() {
+    debugger;
     return store.deliveries.filter(delivery => delivery.neighborhoodId === this.id)
-    debugger
+
   }
 
   customers() {

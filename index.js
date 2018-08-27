@@ -16,6 +16,12 @@ class Neighborhood {
     return store.deliveries.filter(delivery =>
     { return delivery.neighborhoodId === this.id})
   }
+
+  customers() {
+    return store.customers.filter(function(customer) {
+      return customer.neighborhoodId === this.id
+    })
+  }
 }
 
 class Customer {

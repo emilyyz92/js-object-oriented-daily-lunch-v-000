@@ -39,6 +39,12 @@ class Customer {
       return delivery.meal()
     })
   }
+
+  totalSpent() {
+    return this.meals.reduce(function(accu, currentValue) {
+      accu + currentValue.price
+    }, 0)
+  }
 }
 
 class Meal {

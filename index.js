@@ -29,6 +29,10 @@ class Customer {
     this.id = customerId++
     store.customers.push(this)
   }
+
+  deliveries() {
+    store.deliveries.filter(delivery => delivery.customerId === this.id)
+  }
 }
 
 class Meal {

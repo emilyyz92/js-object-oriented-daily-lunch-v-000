@@ -37,7 +37,6 @@ class Meal {
     this.price = parseInt(price)
     this.id = mealId++
     store.meals.push(this)
-
   }
 }
 
@@ -46,8 +45,9 @@ class Delivery {
     this.mealId = mealId
     this.customerId = customerId
     this.neighborhoodId = neighborhoodId
-    store.deliveries.push(this)
     this.id = deliveryId++
+    store.deliveries.push(this)
+
   }
 
   meal() {

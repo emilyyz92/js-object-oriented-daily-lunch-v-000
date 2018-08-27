@@ -65,7 +65,7 @@ class Delivery {
 
   customer() {
     return store.customers.find(
-      customer => customer.id === this.customerId;
+      customer => customer.id === this.customerId
     )
   }
 

@@ -22,7 +22,8 @@ class Neighborhood {
   }
 
   meals() {
-    const meals = this.deliveries().map(delivery => delivery.meal)
+    const meals = this.deliveries().map(delivery => delivery.meal())
+    debugger;
     return Array.from(new Set(meals))
   }
 }

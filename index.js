@@ -13,8 +13,8 @@ class Neighborhood {
   }
 
   deliveries() {
-    return store.deliveries.filter(delivery => 
-    return delivery.neighborIdid === this.id)
+    return store.deliveries.filter(delivery =>
+    delivery.neighborIdid === this.id)
   }
 }
 

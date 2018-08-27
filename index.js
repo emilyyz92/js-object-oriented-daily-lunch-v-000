@@ -70,6 +70,6 @@ class Delivery {
   }
 
   neighborhood() {
-    return store.neighborhoods.find(neighborhood => neighborhood.id === this.neighborhoodId)
+    return store.neighborhoods.find(neighborhood => neighborhood.id === this.neighborhoodId);
   }
 }

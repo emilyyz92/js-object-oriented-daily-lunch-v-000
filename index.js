@@ -42,7 +42,7 @@ class Customer {
 
   totalSpent() {
     return this.meals().reduce(function(accu, currentValue) {
-      accu + currentValue.price
+      return accu + currentValue.price
     }, 0)
   }
 }

@@ -26,8 +26,8 @@ class Customer {
   constructor(name, neighborhoodId) {
     this.name = name
     this.neighborhoodId = neighborhoodId
-    store.customers.push(this)
     this.id = customerId++
+    store.customers.push(this)
   }
 }
 
@@ -35,8 +35,9 @@ class Meal {
   constructor(title, price) {
     this.title = title
     this.price = parseInt(price)
-    store.meals.push(this)
     this.id = mealId++
+    store.meals.push(this)
+
   }
 }
 

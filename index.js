@@ -52,7 +52,7 @@ class Meal {
 }
 
 class Delivery {
-  constructor(mealId, customerId, neighborhoodId) {
+  constructor(mealId, neighborhoodId, customerId) {
     this.mealId = mealId
     this.customerId = customerId
     this.neighborhoodId = neighborhoodId

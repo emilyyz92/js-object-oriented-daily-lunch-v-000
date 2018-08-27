@@ -2,6 +2,7 @@
 let store = { neighborhoods: [], meals: [], customers: [], deliveries: [] };
 let neighborId = 0;
 let customerId = 0;
+let mealId = 0;
 
 class Neighborhood {
   constructor(name) {
@@ -17,5 +18,13 @@ class Customer {
     this.neighborhoodId = neighborhoodId
     store.customers.push(this)
     this.id = customerId++
+  }
+}
+
+class Meal {
+  constructor(title, price) {
+    this.title = title
+    this.price = price
+
   }
 }
